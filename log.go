@@ -220,7 +220,7 @@ func (l *Logger) Output(depth int, prefix Prefix, data string) error {
 	if l.timestamp {
 		// Print timestamp color if color enabled
 		if l.color {
-			l.buf.Blue()
+			l.buf.Cyan()
 		}
 		// Print date and time
 		year, month, day := now.Date()
